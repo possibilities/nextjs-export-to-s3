@@ -3,20 +3,29 @@
   "version": "0.0.0",
   "scripts": {
     "test": "jest",
-    "lint": "standard"
+    "lint": "standard",
+    "format": "prettier --write '**/*.js'"
   },
   "bin": {
     "nextjs-export-to-s3": "./bin"
   },
   "dependencies": {
     "klaw-sync": "^6.0.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "shelljs": "^0.8.3",
+    "ulid": "^2.3.0"
   },
   "devDependencies": {
     "jest": "^25.1.0",
+    "prettier": "^1.19.1",
     "standard": "^14.3.3"
   },
   "standard": {
-    "globals": ["expect", "it", "jest", "describe"]
+    "globals": [
+      "expect",
+      "it",
+      "jest",
+      "describe"
+    ]
   }
 }
