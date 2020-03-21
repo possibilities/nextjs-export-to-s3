@@ -62,7 +62,10 @@ const preview = async bucket => {
   }
 }
 
-const production = () => console.log('production')
+const production = () => {
+  console.error('Error: production not yet implemented')
+  process.exit(1)
+}
 
 const commands = { preview, production }
 
