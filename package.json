@@ -7,7 +7,7 @@
     "format": "prettier --write '**/*.js'"
   },
   "bin": {
-    "nextjs-export-to-s3": "./bin"
+    "nextjs-export-to-s3": "./index.js"
   },
   "dependencies": {
     "klaw-sync": "^6.0.0",
